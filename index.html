@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TFashion</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      style="
+        padding-right: 1.3rem;
+        color: black;
+        background-color: #f5f5f5;
+        padding-bottom: 2px;
+      "
+    >
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">TFashion</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="font-size: 1.1rem"
+        >
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#overview-page"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#Product">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#Contact">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="carousel/carousel 1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <p class="mt-5 fs-3 text-uppercase">Selamat Datang!</p>
+            <h1 class="display-1 fw-bolder text-capitalize">
+              Welcome to TFashion!
+            </h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="carousel/carousel 2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <p class="mt-0 fs-3 text-uppercase">Tempat Terbaik</p>
+            <h1 class="display-1 fw-bolder text-capitalize">
+              With The Best Quality Ever
+            </h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="carousel/carousel 3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <p class="mt-0 fs-3 text-uppercase">Elegant and Beautiful</p>
+            <h1 class="display-1 fw-bolder text-capitalize">
+              Look Produk Yang Elegan Dan Indah
+            </h1>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <section id="overview-page">
+      <h1 style="margin: 5rem 0 0 5rem; color: #222831">About Us</h1>
+
+      <div
+        class="vision-mision"
+        style="display: flex; justify-content: space-between; color: #222831"
+      >
+        <div class="card" style="width: 38rem; margin: 5rem">
+          <div class="card-body">
+            <h5 class="card-title">Our Vision</h5>
+            <p class="card-text">
+              Menjadi brand fashion terkemuka di dunia yang dikenal karena
+              inovasi, kualitas, dan keberlanjutannya, menginspirasi gaya hidup
+              modern yang elegan dan ramah lingkungan. Kami berkomitmen untuk
+              menjadi pionir dalam desain fashion yang memadukan estetika modern
+              dengan fungsionalitas, menciptakan tren baru yang menginspirasi
+              dan relevan dengan perkembangan zaman. Kami berusaha menghadirkan
+              produk-produk fashion dengan standar kualitas tertinggi,
+              memastikan kenyamanan dan daya tahan yang memuaskan pelanggan di
+              seluruh dunia.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 38rem; margin: 5rem">
+          <div class="card-body">
+            <h5 class="card-title">Our Mission</h5>
+            <p class="card-text">
+              Menghadirkan produk fashion dengan kualitas tertinggi dan desain
+              inovatif yang memenuhi kebutuhan dan keinginan pelanggan. Kami
+              berkomitmen untuk menjaga praktik bisnis yang ramah lingkungan
+              dengan menggunakan bahan-bahan berkelanjutan dan proses produksi
+              yang etis. Kami berusaha memberikan pengalaman belanja yang luar
+              biasa dengan layanan pelanggan yang responsif dan profesional,
+              serta membangun hubungan yang kuat dengan komunitas fashion
+              melalui kolaborasi dengan desainer, artis, dan influencer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="pembatas"
+      style="padding: 1px 100px 1px; margin: 5rem; background-color: #222831"
+    ></div>
+
+    <section id="Product">
+      <h1 style="margin: 5rem 0 0 5rem; color: #222831">Our Product</h1>
+      <div
+        class="card-product"
+        style="display: flex; justify-content: space-around"
+      >
+        <div class="card" style="width: 25rem; margin: 5rem">
+          <img src="products/product-7.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Persembahkan dirimu dengan gaya yang tak lekang oleh waktu dengan
+              tas kulit cokelat kami, menampilkan kombinasi elegan antara
+              kepraktisan sehari-hari dan keindahan desain yang tahan lama.
+            </p>
+            <h2>Rp.535.000</h2>
+            <a
+              class="btn btn-primary"
+              href="https://shopee.co.id/Tas-Ransel-Kulit-BYNR-16699-i.42330751.23515934488?sp_atk=de41da92-4fd4-4eeb-ab7d-03a19f998894&xptdk=de41da92-4fd4-4eeb-ab7d-03a19f998894"
+              role="button"
+              >Buy Now!</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 25rem; margin: 5rem">
+          <img src="products/product-3.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Tampilkan gaya eleganmu dengan sepatu hitam kami yang sesuai
+              dengan setiap kesempatan, memberikan keseimbangan sempurna antara
+              gaya dan kenyamanan.
+            </p>
+            <h2>Rp.132.000</h2>
+            <a
+              class="btn btn-primary"
+              href="https://shopee.co.id/Aerostreet-37-44-Brave-Low-Hitam-Natural-Sepatu-Sneakers-Casual-Pria-Wanita-Aero-Street-21AA30-i.177400943.3897196788?sp_atk=5fd37926-05e3-4c67-8997-821648be77b5&xptdk=5fd37926-05e3-4c67-8997-821648be77b5
+
+            "
+              role="button"
+              >Buy Now!</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card-product"
+        style="display: flex; justify-content: space-around"
+      >
+        <div class="card" style="width: 25rem; margin: 5rem">
+          <img src="products/product-4.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Pilihlah kenyamanan dan gaya dengan jaket cokelat berkualitas
+              kami, sebuah pilihan yang sempurna untuk menemani setiap
+              petualangan Anda!
+            </p>
+            <h2>Rp.185.000</h2>
+            <a
+              class="btn btn-primary"
+              href="https://shopee.co.id/COMFY-JAKET-JAKET-PRIA-JAKET-COMFY-PREMIUM-i.508809249.16988505957?sp_atk=2aea78a4-58bd-42b3-8523-ec8f9e6f18d7&xptdk=2aea78a4-58bd-42b3-8523-ec8f9e6f18d7
+            "
+              role="button"
+              >Buy Now!</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 25rem; margin: 5rem">
+          <img src="products/product-8.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Terinspirasi oleh keindahan samudra,kami memberikan sentuhan
+              elegan dan menyegarkan pada gaya Anda, menjadi pilihan sempurna
+              untuk penampilan yang santai namun tetap berkelas.
+            </p>
+            <h2>Rp.120.000</h2>
+            <a
+              class="btn btn-primary"
+              href="https://shopee.co.id/MORWICK-Kaos-Polo-Shirt-Short-Sleeve-Lengan-Pendek-Pria-Reaper-Navy-i.203862443.22210535583?sp_atk=b01c4886-2faf-4957-abd5-a04ab6ac9e7e&xptdk=b01c4886-2faf-4957-abd5-a04ab6ac9e7e
+            "
+              role="button"
+              >Buy Now!</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="kontak-saya" id="Contact">
+      <p>Lihat lebih jauh tentang kami</p>
+    </div>
+    <footer>
+      <p>TFashion</p>
+      <p>Untuk mengenal lebih jauh tentang kami hubungi :</p>
+      <div class="sosial">
+        <a href="https://wa.me/+6281298805136" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="https://www.instagram.com/taqqna_/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://youtube.com/@taqyy9902?si=1lrsiljMPFI3ie9A"
+          target="_blank"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+      </div>
+      <p class="end">CopyRight@TFashion</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+     
+  </body>
+</html>
